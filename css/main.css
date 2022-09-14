@@ -27,7 +27,8 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
@@ -411,8 +412,7 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 

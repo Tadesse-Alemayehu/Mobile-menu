@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
     if (icon.classList.contains("fa-bars")) {
       icon.classList.remove("fa-bars")
       icon.classList.add("fa-times")
+      navbar.classList.add("mobile-shown")
     }
     else {
       icon.classList.add("fa-bars")
       icon.classList.remove("fa-times")
+      navbar.classList.remove("mobile-shown")
     }
   })
 })
