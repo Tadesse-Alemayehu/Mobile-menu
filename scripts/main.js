@@ -9,11 +9,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
       icon.classList.remove("fa-bars")
       icon.classList.add("fa-times")
       navbar.classList.add("mobile-shown")
+      navbar.style.display = 'none'
     }
     else {
       icon.classList.add("fa-bars")
       icon.classList.remove("fa-times")
-      navbar.classList.remove("mobile-shown")
+      navbar.classList.remove("mobile")
+      navbar.style.display = 'flex'
     }
   })
+
+  if (navbar.style.valueOf()['display'] == 'none') {
+    console.log("navbar is hidden")
+  }
 })

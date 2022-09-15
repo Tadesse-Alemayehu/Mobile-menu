@@ -25,6 +25,8 @@ header {
   padding: 15px;
   background-color: #3c3a39;
   color: white;
+  /* changes  */
+  flex-direction: column;
 }
 
 #desktop-nav,
@@ -32,6 +34,42 @@ header {
   display: none;
 }
 
+#desktop-nav.mobile {
+  display: block;
+  min-width: 100%;
+}
+#desktop-nav ul {
+  display: flex;
+  margin-right: 10vw;
+  /* changes */
+  flex-direction: column;
+}
+
+/* remove this class from desktop view */
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 10px;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid transparent;
+  transition: 350ms;
+  /* change */
+  font-size: 15px;
+}
+
+/* change */
+#desktop-nav ul li {
+  text-align: left;
+}
 #logo {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -423,6 +461,10 @@ textarea {
     left: 5px;
     bottom: 35%;
   }
+  #mobile-nav {
+    display: inline;
+    float: left;
+  }
 
   .mobile-icon {
     display: none;
@@ -451,6 +493,10 @@ textarea {
   #desktop-nav ul {
     display: flex;
     margin-right: 10vw;
+    flex-direction: row;
+  }
+  #desktop-nav ul li {
+    text-align: center;
   }
 
   .nav-link {
