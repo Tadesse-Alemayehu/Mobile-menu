@@ -25,6 +25,7 @@ header {
   padding: 15px;
   background-color: #3c3a39;
   color: white;
+
   /* changes  */
   flex-direction: column;
 }
@@ -38,9 +39,11 @@ header {
   display: block;
   min-width: 100%;
 }
+
 #desktop-nav ul {
   display: flex;
   margin-right: 10vw;
+
   /* changes */
   flex-direction: column;
 }
@@ -56,20 +59,35 @@ header {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
   line-height: 10px;
   color: #fff;
   padding: 15px;
   border: 1px solid transparent;
   transition: 350ms;
+
   /* change */
   font-size: 15px;
+}
+
+.project-stacks li {
+  display: inline;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  background: transparent;
+  color: #fff;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.project-stacks li:hover {
+  background: rgba(0, 0, 0, 0.349);
 }
 
 /* change */
 #desktop-nav ul li {
   text-align: left;
 }
+
 #logo {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -266,24 +284,6 @@ main {
   right: 0;
 }
 
-li {
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
-  padding: 5px;
-}
-
-.card-stacks li {
-  background: rgba(255, 255, 255, 0.24) !important;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
 .gtime {
   background-image: url("../media/png/gtime.png");
 }
@@ -305,20 +305,6 @@ li {
   flex-wrap: wrap;
   grid-gap: 15px;
   padding: 20px 0;
-}
-
-.project-stacks li {
-  display: inline;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  background: transparent;
-  color: #fff;
-  transition: 350ms;
-  cursor: pointer;
-}
-
-.project-stacks li:hover {
-  background: rgba(0, 0, 0, 0.349);
 }
 
 #about-me,
@@ -450,7 +436,8 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter:
+    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
@@ -461,6 +448,7 @@ textarea {
     left: 5px;
     bottom: 35%;
   }
+
   #mobile-nav {
     display: inline;
     float: left;
@@ -490,11 +478,30 @@ textarea {
     display: block;
   }
 
+  li {
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+  }
+
+  .card-stacks li {
+    background: rgba(255, 255, 255, 0.24) !important;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
   #desktop-nav ul {
     display: flex;
     margin-right: 10vw;
     flex-direction: row;
   }
+
   #desktop-nav ul li {
     text-align: center;
   }
