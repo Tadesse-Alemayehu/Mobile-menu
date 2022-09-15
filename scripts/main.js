@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', () => {
   console.log('imported');
   const m = document.getElementById('switch-menu');
   const icon = m.getElementsByTagName('i')[0];
