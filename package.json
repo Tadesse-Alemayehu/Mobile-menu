@@ -1,0 +1,31 @@
+{
+  "name": "mobile-menu",
+  "version": "1.0.0",
+  "description": "> My portfolio ✋🏼 where you will get glimpses of what I'm capable of. Including some of the projects I have been working on 🎞 , technologies I am familiar with, contact details, and more. The main technologies here are JavaScript, CSS3 and HTML5 🙌 See me live: https://tadesse-alemayehu.github.io/Mobile-menu/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tadesse-Alemayehu/Mobile-menu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tadesse-Alemayehu/Mobile-menu/issues"
+  },
+  "homepage": "https://github.com/Tadesse-Alemayehu/Mobile-menu#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
