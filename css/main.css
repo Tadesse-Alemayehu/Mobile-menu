@@ -25,9 +25,9 @@ header {
   padding: 15px;
   background-color: #3c3a39;
   color: white;
-
   /* changes  */
   flex-direction: column;
+  min-height: 100vh;
 }
 
 #desktop-nav,
@@ -43,9 +43,8 @@ header {
 #desktop-nav ul {
   display: flex;
   margin-right: 10vw;
-
-  /* changes */
   flex-direction: column;
+  list-style: none;
 }
 
 /* remove this class from desktop view */
@@ -436,12 +435,14 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
 @media all and (min-width: 720px) {
+  header {
+    min-height: max-content;
+  }
   .top-social {
     flex-direction: column;
     position: absolute;
