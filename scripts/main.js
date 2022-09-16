@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.classList.remove('fa-bars');
       icon.classList.add('fa-times');
       navbar.classList.add('mobile-shown');
-      navbar.style.display = 'none';
+      navbar.style.display = 'flex';
       logo.style.display = 'none';
       header.style.minHeight = '100vh';
     } else {
       icon.classList.add('fa-bars');
       icon.classList.remove('fa-times');
       navbar.classList.remove('mobile');
-      navbar.style.display = 'flex';
+      navbar.style.display = 'none';
       logo.style.display = 'flex';
       header.style.minHeight = 'max-content';
     }
